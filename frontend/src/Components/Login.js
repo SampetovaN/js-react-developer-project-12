@@ -27,7 +27,6 @@ const SignupForm = () => {
   return (
     <div className="row justify-content-center align-content-center h-100">
       <div className="col-12 col-md-8 col-xxl-6">
-        <h1 className="text-center mb-4">Войти</h1>
         <form onSubmit={formik.handleSubmit}>
           <h1 className="text-center mb-4">Войти</h1>
           <div className="form-floating mb-4">
