@@ -1,13 +1,14 @@
-import {useFormik} from 'formik';
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import { useFormik } from 'formik';
 import cn from 'classnames';
 
-const SignupForm = () => {
+const Login = () => {
   const formik = useFormik({
     initialValues: {
       password: '',
       username: '',
     },
-    onSubmit: (values) => {
+    onSubmit: () => {
       // todo
     },
     validate: (values) => {
@@ -23,7 +24,7 @@ const SignupForm = () => {
       return errors;
     },
   });
-  const inputClasses = (error) => cn('form-control', {'is-invalid': error})
+  const inputClasses = (error) => cn('form-control', { 'is-invalid': error });
   return (
     <div className="row justify-content-center align-content-center h-100">
       <div className="col-12 col-md-8 col-xxl-6">
@@ -66,4 +67,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default Login;
